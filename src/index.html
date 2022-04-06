@@ -11,6 +11,40 @@
     <div class="relative ">
         <!-- HEADER -->
         <header class="bg-transparent z-50 absolute top-0 right-0 left-0 pt-[38px]">
+            <!-- MENU_MOBILE -->
+            <div id="menu" class="bg-white fixed inset-0 flex flex-col items-center p-[39px] hidden">
+                    <a href="#">
+                        <img src="/dist/img/logo-2.svg" width="140px" alt="Лого">
+                    </a>
+                    <div class="flex flex-col mt-[40px]">
+                        <span class="text-brand-dark text-[12px] font-normal leading-[15px] text-center">lifecell<a class="text-brand-dark text-[17px] font-bold leading-[21px] ml-3 hover:text-brand duration-300" href="#">+380 93 541 20 92</a></span>
+                        <span class="text-brand-dark text-[12px] font-normal leading-[15px] text-center">Vodafone<a class="text-brand-dark text-[17px] font-bold leading-[21px] ml-3 hover:text-brand duration-300" href="#">+380 99 311 29 79</a></span>
+                    </div>
+                    <nav class="my-[40px]">
+                        <ul class="flex flex-col items-center">
+                            <li class="mb-[40px]">
+                                <a class=" pb-1 text-brand-dark text-[18px] font-normal leading-[22px] border-b-2 border-brand-dark border-opacity-0 duration-300 hover:border-opacity-100 hover:text-brand menu-link" href="#">О нас</a>
+                            </li>
+                            <li class="mb-[40px]">
+                                <a  class="pb-1 text-brand-dark text-[18px] font-normal leading-[22px]  border-b-2 border-brand-dark border-opacity-0 duration-300 hover:border-opacity-100 hover:text-brand menu-link" href="#">Услуги</a>
+                            </li>
+                            <li>
+                                <a class="pb-1 text-brand-dark text-[18px] font-normal leading-[22px] border-b-2 border-brand-dark border-opacity-0 duration-300 hover:border-opacity-100 hover:text-brand menu-link" href="#">Цены</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <button class="btn">Отправить заявку
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-[12px]" fill="none"  viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                        </svg>
+                    </button>
+                    <button id="menu-close" class="absolute right-[18px] top-[45px]">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-[30px] w-[30px] text-brand-dark" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                          </svg>
+                    </button>
+            </div>
+            <!-- MENU_MOBILE -->
             <div  class="container mx-auto px-[16px] flex items-center justify-between">
                 <a href="#">
                     <img src="/dist/img/logo.svg" alt="Лого">
@@ -32,7 +66,7 @@
                     <span class="text-white text-[12px] font-normal leading-[15px] text-right">lifecell<a class="text-white text-[17px] font-bold leading-[21px] ml-3 hover:text-brand duration-300" href="#">+380 93 541 20 92</a></span>
                     <span class="text-white text-[12px] font-normal leading-[15px] text-right">Vodafone<a class="text-white text-[17px] font-bold leading-[21px] ml-3 hover:text-brand duration-300" href="#">+380 99 311 29 79</a></span>
                 </div>
-                <button id="menu-button" class="lg:hidden">
+                <button id="menu-open" class="lg:hidden">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-[30px] w-[30px] text-brand" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
                         </svg>
@@ -61,6 +95,75 @@
             </div>
         </section>
         <!-- HERO-end -->
+        <!-- ABOUT -->
+        <section class="container mx-auto px-[16px] mt-[46px] md:flex">
+                <h3 class="font-bold text-[36px] leading-[44px] text-brand-dark mb-[20px] md:min-w-[186px] md:mr-[70px]">О нас</h3>
+                <p class="text-[#252D37] max-w-[345px] md:max-w-[821px]">IT-SPK - сервисная компания по обслуживанию АйТи инфраструктуры для бизнеса. Мы небольшая команда фанатов своего дела c многолетним опытом работы. Решаем любые ИТ задачи в Киеве: проектирование, монтаж и поддержка ИТ инфраструктуры, настройка и поддержка серверов, виртуализация, обслуживание компьютеров, поддержка пользователей.</p>
+        </section>
+        <!-- ABOUT-end -->
+        <!-- SERVICE -->
+        <section class="container mx-auto px-[16px] mt-[46px]">
+            <h3 class="font-bold text-[36px] leading-[44px] text-brand-dark mb-[20px]">Услуги</h3>
+            <div class="grid grid-cols-1 gap-[38px] md:grid-cols-3">
+                <div class="flex items-center">
+                    <img class="mr-[23px]" src="/dist/img/icon1.svg" width="75" height="67" alt="Иконка">
+                    <p class="max-w-[231px] text-brand-dark font-bold text-[18px] leading-[23px]">Обслуживание компьютеров</p>
+                </div>
+                <div class="flex items-center">
+                    <img class="mr-[23px]" src="/dist/img/icon2.svg" width="73" height="66" alt="Иконка">
+                    <p class="max-w-[231px] text-brand-dark font-bold text-[18px] leading-[23px]">Обслуживание серверов</p>
+                </div>
+                <div class="flex items-center">
+                    <img class="mr-[23px]" src="/dist/img/icon3.svg" width="72" height="67" alt="Иконка">
+                    <p class="max-w-[231px] text-brand-dark font-bold text-[18px] leading-[23px]">Виртуализация 1С</p>
+                </div>
+                <div class="flex items-center">
+                    <img class="mr-[23px]" src="/dist/img/icon4.svg" width="75" height="67" alt="Иконка">
+                    <p class="max-w-[231px] text-brand-dark font-bold text-[18px] leading-[23px]">Аудит ИТ-инфраструктуры
+                        и проектирование</p>
+                </div>
+                <div class="flex items-center">
+                    <img class="mr-[23px]" src="/dist/img/icon5.svg" width="76" height="73" alt="Иконка">
+                    <p class="max-w-[231px] text-brand-dark font-bold text-[18px] leading-[23px]">Резервное копирование</p>
+                </div>
+                <div class="flex items-center">
+                    <img class="mr-[23px]" src="/dist/img/icon6.svg" width="75" height="62" alt="Иконка">
+                    <p class="max-w-[231px] text-brand-dark font-bold text-[18px] leading-[23px]">Переезд ИТ инфраструктуры</p>
+                </div>
+            </div>
+        </section>
+        <!-- SERVICE-end -->
+        <!-- BENEFITS -->
+        <section class="container mx-auto px-[16px] mt-[63px] md:mt-[127px] md:flex md:flex-col">
+            <div class="md:flex md: justify-between md:items-center md:ml-[70px] md:order-2 md:mb-[70px]">
+                <img class="mb-[30px]" src="/dist/img/cross.svg" width="343" height="191" alt="Цель">
+                <h4 class="font-bold text-[22px] leading-[29px] text-brand-dark max-w-[344px] mb-[30px] md:mb-0 md:max-w-[521px]">Сократить расходы на ИТ + оптимизировать работу = увеличить вашу прибыль и отрыв от конкурентов</h4>
+            </div>
+            <h4 class="font-bold text-[22px] leading-[29px] text-brand-dark max-w-[344px] mb-[30px] md:max-w-full">C IT-SPK ваш офис будет работать эффективно и безотказно</h4>
+            <div class="md:flex md:items-start md:justify-around">
+                <p class="font-normal text-[16px] leading-[22px] text-[#252D37] max-w-[344px] mb-[30px] md:max-w-[529px]">За время работы мы подобрали оптимальные решения по соотношению цена-качество для организации офисной IT-инфраструктуры. Огромный опыт обслуживания объектов в Киеве от офиса на несколько рабочих мест до офисно-производственных комплексов на тысячи квадартных метров и более полутора сотен подключенных абонентов.</p>
+                <p class="font-normal text-[16px] leading-[22px] text-[#252D37] max-w-[344px] mb-[30px] md:max-w-[529px]">Абонентское обслуживание компьютеров в Киеве уже сейчас не оставляет шансов на выживание обычным сисадминам в штате компании, прежний подход дороже и неэффективный. С первого дня работы с нами вы получаете доступ ко всем нашим знаниям, опыту и ресурсам. </p>
+            </div>
+            <button class="btn md:max-w-[285px] md:mb-[125px]">Отправить заявку
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-[12px]" fill="none"  viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+            </button>
+            <h4 class="md:max-w-full font-bold text-[22px] leading-[29px] text-brand-dark max-w-[344px] mb-[30px] my-[40px] md:mb-[80px] md:order-3">Подключить обслуживание компьютеров у нас очень просто</h4>
+            <div class="md:flex md:justify-between md:items-center md:order-4">
+                <div class="relative mb-[40px]">
+                    <p class="font-bold text-[18px] leading-[22px] text-[#252D37] max-w-[309px] before:content-['1']  before:-z-10 before:text-[96px] before:text-brand before:font-bold before:block before:absolute before:left-0 before:top-0 pl-[15px] ">Оставьте заявку на сайте или просто позвоните нам</p>
+                </div>
+                <div class="relative mb-[40px]">
+                    <p class="font-bold text-[18px] leading-[22px] text-[#252D37] max-w-[309px] before:content-['2']  before:-z-10 before:text-[96px] before:text-brand before:font-bold before:block before:absolute before:left-0 before:top-0 pl-[15px] ">Мы проведем бесплатный аудит и подготовим коммерческое предложение</p>
+                </div>
+                <div class="relative mb-[40px]">
+                    <p class="font-bold text-[18px] leading-[22px] text-[#252D37] max-w-[309px] before:content-['3']  before:-z-10 before:text-[96px] before:text-brand before:font-bold before:block before:absolute before:left-0 before:top-0 pl-[15px] ">Заключим договор и ваш офис заработает безотказно</p>
+                </div>
+            </div>
+        </section>
+        <!-- BENEFITS-end -->
     </div>
+    <script src="/dist/main.js"></script>
 </body>
 </html>

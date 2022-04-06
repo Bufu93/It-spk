@@ -8,7 +8,4 @@
     .btn {
         @apply px-[45px] py-[15px] bg-brand font-bold text-[14px] flex items-center uppercase
     }
-    ._active-burger {
-        @apply 
-    }
 }
