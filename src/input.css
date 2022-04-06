@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@400;700;900&family=Noto+Sans:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .btn {
+        @apply px-[45px] py-[15px] bg-brand font-bold text-[14px] flex items-center uppercase
+    }
+    ._active-burger {
+        @apply 
+    }
+}
