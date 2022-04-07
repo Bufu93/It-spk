@@ -12,7 +12,7 @@
         <!-- HEADER -->
         <header class="bg-transparent z-50 absolute top-0 right-0 left-0 pt-[38px]">
             <!-- MENU_MOBILE -->
-            <div id="menu" class="bg-white fixed inset-0 flex flex-col items-center p-[39px] hidden">
+            <div id="menu" class="bg-white fixed inset-0 flex flex-col items-center p-[39px] hidden container">
                     <a href="#">
                         <img src="/dist/img/logo-2.svg" width="140px" alt="Лого">
                     </a>
@@ -23,13 +23,13 @@
                     <nav class="my-[40px]">
                         <ul class="flex flex-col items-center">
                             <li class="mb-[40px]">
-                                <a class=" pb-1 text-brand-dark text-[18px] font-normal leading-[22px] border-b-2 border-brand-dark border-opacity-0 duration-300 hover:border-opacity-100 hover:text-brand menu-link" href="#">О нас</a>
+                                <a class=" pb-1 text-brand-dark text-[18px] font-normal leading-[22px] border-b-2 border-brand-dark border-opacity-0 duration-300 hover:border-opacity-100 hover:text-brand menu-link" href="#about" data-scroll>О нас</a>
                             </li>
                             <li class="mb-[40px]">
-                                <a  class="pb-1 text-brand-dark text-[18px] font-normal leading-[22px]  border-b-2 border-brand-dark border-opacity-0 duration-300 hover:border-opacity-100 hover:text-brand menu-link" href="#">Услуги</a>
+                                <a  class="pb-1 text-brand-dark text-[18px] font-normal leading-[22px]  border-b-2 border-brand-dark border-opacity-0 duration-300 hover:border-opacity-100 hover:text-brand menu-link" href="#service" data-scroll>Услуги</a>
                             </li>
                             <li>
-                                <a class="pb-1 text-brand-dark text-[18px] font-normal leading-[22px] border-b-2 border-brand-dark border-opacity-0 duration-300 hover:border-opacity-100 hover:text-brand menu-link" href="#">Цены</a>
+                                <a class="pb-1 text-brand-dark text-[18px] font-normal leading-[22px] border-b-2 border-brand-dark border-opacity-0 duration-300 hover:border-opacity-100 hover:text-brand menu-link" href="#price" data-scroll>Цены</a>
                             </li>
                         </ul>
                     </nav>
@@ -52,13 +52,13 @@
                 <nav class="lg:flex hidden">
                     <ul class="lg:flex">
                         <li>
-                            <a class=" pb-1 text-white text-[18px] font-normal leading-[22px] mr-[40px] border-b-2 border-brand border-opacity-0 duration-300 hover:border-opacity-100 hover:text-brand" href="#">О нас</a>
+                            <a class=" pb-1 text-white text-[18px] font-normal leading-[22px] mr-[40px] border-b-2 border-brand border-opacity-0 duration-300 hover:border-opacity-100 hover:text-brand" href="#about" data-scroll>О нас</a>
                         </li>
                         <li>
-                            <a class="pb-1 text-white text-[18px] font-normal leading-[22px] mr-[40px] border-b-2 border-brand border-opacity-0 duration-300 hover:border-opacity-100 hover:text-brand " href="#">Услуги</a>
+                            <a class="pb-1 text-white text-[18px] font-normal leading-[22px] mr-[40px] border-b-2 border-brand border-opacity-0 duration-300 hover:border-opacity-100 hover:text-brand " href="#service" data-scroll>Услуги</a>
                         </li>
                         <li>
-                            <a class="pb-1 text-white text-[18px] font-normal leading-[22px] border-b-2 border-brand border-opacity-0 duration-300 hover:border-opacity-100 hover:text-brand" href="#">Цены</a>
+                            <a class="pb-1 text-white text-[18px] font-normal leading-[22px] border-b-2 border-brand border-opacity-0 duration-300 hover:border-opacity-100 hover:text-brand" href="#price" data-scroll>Цены</a>
                         </li>
                     </ul>
                 </nav>
@@ -97,13 +97,13 @@
         <!-- HERO-end -->
         <!-- ABOUT -->
         <section class="container mx-auto px-[16px] mt-[46px] md:flex">
-                <h3 class="font-bold text-[36px] leading-[44px] text-brand-dark mb-[20px] md:min-w-[186px] md:mr-[70px]">О нас</h3>
+                <h3 id="about" class="scroll-smooth font-bold text-[36px] leading-[44px] text-brand-dark mb-[20px] md:min-w-[186px] md:mr-[70px]">О нас</h3>
                 <p class="text-[#252D37] max-w-[345px] md:max-w-[821px]">IT-SPK - сервисная компания по обслуживанию АйТи инфраструктуры для бизнеса. Мы небольшая команда фанатов своего дела c многолетним опытом работы. Решаем любые ИТ задачи в Киеве: проектирование, монтаж и поддержка ИТ инфраструктуры, настройка и поддержка серверов, виртуализация, обслуживание компьютеров, поддержка пользователей.</p>
         </section>
         <!-- ABOUT-end -->
         <!-- SERVICE -->
         <section class="container mx-auto px-[16px] mt-[46px]">
-            <h3 class="font-bold text-[36px] leading-[44px] text-brand-dark mb-[20px]">Услуги</h3>
+            <h3 id="service" class="scroll-smooth font-bold text-[36px] leading-[44px] text-brand-dark mb-[20px]">Услуги</h3>
             <div class="grid grid-cols-1 gap-[38px] md:grid-cols-3">
                 <div class="flex items-center">
                     <img class="mr-[23px]" src="/dist/img/icon1.svg" width="75" height="67" alt="Иконка">
@@ -163,7 +163,150 @@
             </div>
         </section>
         <!-- BENEFITS-end -->
+        <!-- PRICE -->
+        <section class="mb-[67px]">
+            <div class="container mx-auto px-[16px]">
+                <h3 id="price"  class="scroll-smooth font-bold text-[36px] leading-[44px] text-brand-dark mb-[20px]">Цены</h3>
+                <div class="md:grid md:grid-cols-[1fr_259px_259px] md:grid-rows-[1fr_59px] gap-[12px]">
+                    <div class="md:row-start-1 md:row-end-2 mb-[20px]">
+                        <p class="font-normal text-[16px] leading-[22px] text-[#252D37] mb-[20px]">У нас нет зарплаты или фиксированной суммы в месяц, все рассчеты базируются только на количестве компьютеров, которые мы берем на обслуживание и подключенных услугах. Платите только за что чем пользуетесь - <span class="font-bold">максимальная экономия и эффективность.</span></p>
+                        <p class="font-normal text-[16px] leading-[22px] text-[#252D37]">
+                            Оставьте заявку на обслуживание компьютеров и мы подготовим предложение специально для вас</p>
+                    </div>
+                    <div class="md:h-full md:row-span-full mb-[20px] py-[30px] border-[2px] border-brand-dark min-h-[287px] text-center md:min-h-0 font-normal text-[18px] leading-[25px] text-brand-dark">
+                        <p class="mb-[14px]">Тарифный план</p>
+                        <h5 class="font-bold text-[26px]  leading-[36px] uppercase">Легкий старт</h5>
+                        <span class=" block font-bold text-[70px]  leading-[80px]">350</span>
+                        <span class="text-[20px] leading-[24px]">грн/мес</span>
+                        <p class="mt-[22px]">за 1 рабочее место</p>
+                    </div>
+                    <div class="md:h-full md:row-span-full md:min-h-0 mb-[20px] py-[30px] border-[2px] border-brand-dark text-center font-normal text-[18px] leading-[25px] text-brand-dark min-h-[287px]">
+                        <p class="mb-[14px]">Тарифный план</p>
+                        <h5 class="font-bold text-[26px]  leading-[36px] uppercase">Бизнес</h5>
+                        <span class=" block font-bold text-[70px]  leading-[80px]">315</span>
+                        <span class="text-[20px] leading-[24px]">грн/мес</span>
+                        <p class="mt-[22px]">за 1 рабочее место</p>
+                    </div>
+                    <div class="flex items-center md:row-start-2 md:row-end-3">
+                        <button class="mr-[20px] border-[2px] border-brand-dark text-brand-dark uppercase flex items-center font-bold text-[14px] leading-[17px] px-[14px] py-[13px]">Прайс it
+                            <svg class="ml-[7px]" width="23" height="24" viewBox="0 0 23 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.5 -4.5897e-07L11.5 17M11.5 17L18 10.5M11.5 17L4.99999 10.5M1 19.5L1 22.5L11.5 22.5L22 22.5L22 19.5" stroke="#001E42" stroke-width="2"/>
+                                </svg>
+                        </button>
+                        <button class="border-[2px] border-brand-dark text-brand-dark uppercase flex items-center font-bold text-[14px] leading-[17px] px-[14px] py-[13px]">Прайс монтаж
+                            <svg class="ml-[7px]" width="23" height="24" viewBox="0 0 23 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.5 -4.5897e-07L11.5 17M11.5 17L18 10.5M11.5 17L4.99999 10.5M1 19.5L1 22.5L11.5 22.5L22 22.5L22 19.5" stroke="#001E42" stroke-width="2"/>
+                                </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- PRICE-end -->
+        <!-- CLIENTS -->
+        <section class="mb-[56px]">
+            <div class="container mx-auto px-[16px]">
+                <h3  class="font-bold text-[36px] leading-[44px] text-brand-dark mb-[20px]">Клиенты</h3>
+                <div class="flex flex-wrap justify-center md:justify-between">
+                    <div class="flex items-center justify-center w-[110px] h-[75px] grayscale opacity-60 md:grayscale-0 md:opacity-100 md:w-[162px] md:h-[110px]">
+                        <img class="md:w-[137px] md:h-[42px] w-[93px] h-[28px]" src="/dist/img/client1.svg" alt="Лого">
+                    </div>
+                    <div class="md:grayscale-0 md:opacity-100 md:w-[162px] md:h-[110px] flex items-center justify-center w-[110px] h-[75px] grayscale opacity-60">
+                        <img class="md:w-[83px] md:h-[83px] w-[56px] h-[56px]" src="/dist/img/client2.svg" alt="Лого">
+                    </div>
+                    <div class="md:grayscale-0 md:opacity-100 md:w-[162px] md:h-[110px] flex items-center justify-center w-[110px] h-[75px] grayscale opacity-60">
+                        <img class="md:w-[150px] md:h-[29px] w-[101px] h-[20px]" src="/dist/img/client3.svg" alt="Лого">
+                    </div>
+                    <div class="md:grayscale-0 md:opacity-100 md:w-[162px] md:h-[110px] flex items-center justify-center w-[110px] h-[75px] grayscale opacity-60">
+                        <img class="md:w-[103px] md:h-[55px] w-[70px] h-[37px]" src="/dist/img/client4.svg" alt="Лого">
+                    </div>
+                    <div class="md:grayscale-0 md:opacity-100 md:w-[162px] md:h-[110px] flex items-center justify-center w-[110px] h-[75px] grayscale opacity-60">
+                        <img class="md:w-[153px] md:h-[35px] w-[104px] h-[23px]" src="/dist/img/client5.svg" alt="Лого">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- CLIENTS-end -->
+        <!-- ORG -->
+        <section class="mb-[56px]">
+            <div class="container mx-auto px-[16px]">
+                <h5 class="font-bold text-[16px] leading-[20px] text-[#A5AAAF] mb-[13px]">Организация IT-инфраструктуры в Киеве</h5>
+                <div class="md:flex md:justify-between font-normal text-[12px] leading-[13px] text-[#A5AAAF]">
+                    <div class="md:max-w-[520px]">
+                        <p class="mb-[13px]">Мы имеем большой опыт организации работы IT отделов разных компаний из города Киев и на основе этого создали универсальный протокол работы, который гарантирует стабильно высокое качество предоставления услуг.</p>
+                        <p class="mb-[13px]">Всегда на старте проводим аудит существующих апаратных и программных решений. Берем во внимание как проложены сети, установленное серверное и коммутационное оборудование, к каким провайдерам и на каких условиях подключено. Анализ установленных компьютеров и оборудования, завязанных в сеть компании. По результатам этого этапа работы мы даем комплексный отчет с перечнем найденных критических и потенциально проблемных мест в ИТ-инфраструктуре компании, с вариантами их устранения.</p>
+                        <p class="mb-[13px]">В случае если идет проектирование IT-инфраструктуры с нуля, мы учтем все пожелания и сразу сделаем все необходимое для бесперебойной работы компьютерной сети компании.</p>
+                        <p class="mb-[13px]">Спланируем и организуем переезд всех IT-систем офиса на новую локацию или удаленную работу сотрудников при необходимости. 
+                        </p>
+                    </div>
+                    <div class="md:max-w-[520px]">
+                        <p class="mb-[7px]">Услуги обслуживания компьютеров и серверов в Киеве это не только установить Windows и кинуть провод, это большой и сложный комплекс услуг:</p>
+                            <ul>
+                                <li class="mb-[7px]">- Установка, настройка и сопровождение ПО;</li>
+                                <li class="mb-[7px]">- Администрирование доменных, почтовых, файловых и хостинг серверов;</li>
+                                <li class="mb-[7px]"> - Обеспечение защиты данных;</li>
+                                <li class="mb-[7px]">- Восстановление потерянных данных;</li>
+                                <li class="mb-[7px]">- Внедрение решений по защите конфиденциальной информации;</li>
+                                <li class="mb-[7px]">- Безопасный удаленный доступ к информации;</li>
+                                <li class="mb-[7px]">- Обслуживание бухгалтерских программ 1С Предприятие, M.E.Doc и других;</li>
+                                <li class="mb-[7px]">- Внедрение и сопровождение серверов IP телефонии;</li>
+                                <li class="mb-[7px]">- Монтаж и обслуживание сетей (СКС);</li>
+                                <li class="mb-[7px]">- Ремонт и обслуживание компьютеров, оргтехники.</li>
+                                <li class="mb-[7px]">- Оперативная техническая поддержка  и консультация сотрудников</li>
+                                <li class="mb-[7px]">- Ведение первичной документации, сметы, логистика, снабжение ИТ-отдела.</li>
+                            </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ORG-end -->
+        <!-- FORM -->
+        <section class="bg-[url('/dist/img/bg-form.jpg')] bg-cover bg-no-repeat bg-center min-h-[666px] pb-[29px] pt-[63px]">
+            <div class="container mx-auto px-[16px] md:flex md:justify-around md:items-center">
+                    <h2 class="text-white font-bold text-[33px] leading-[40px] max-w-[342px] mb-[39px]">Оставьте заявку на обслуживание компьютеров и мы свяжемся с вами</h2>
+                <form action="#" class="flex flex-col min-w-[343px]">
+                    <label>
+                        <input class="w-full px-[20px] py-[10px] placeholder mb-[14px]" type="text " name="text" placeholder="Имя">
+                    </label>
+                    <label>
+                        <input class="w-full px-[20px] py-[10px] placeholder mb-[14px]" type="tel" name="tel" placeholder="Номер телефона*">
+                    </label>
+                    <label>
+                        <input class="w-full px-[20px] py-[10px] placeholder mb-[14px]" type="email" name="email" placeholder="E-mail">
+                    </label>
+                    <label>
+                        <textarea class="resize-none w-full h-[103px] placeholder px-[20px] py-[10px] mb-[9px]" placeholder="Сообщение" name="message" id=""></textarea>
+                    </label>
+                    <label class="flex items-center w-full text-[#A5AAAF] font-normal text-[10px] leading-[14px] mb-[16px]">
+                        <input class="w-[20px] h-[20px] rounded-none mr-[7px]" type="checkbox" name="checkbox-policy">
+                        Даю согласие на обработку персональных данных
+                    </label>
+                    <button class="btn w-full justify-center">Отправить
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-[12px]" fill="none"  viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </section>
+        <!-- FORM-end -->
+        <!-- FOOTER -->
+        <footer class="bg-[#06182F] min-h-[260px] md:min-h-[141px]">
+            <div class="container px-[16px] mx-auto pt-[30px] text-white text-[16px] leading-[20px] font-normal md:flex md:justify-between">
+                <div class="flex flex-col mb-[28px]">
+                    <a class="mb-[22px]" href="mailto:info@it-spk.com">info@it-spk.com</a>
+                    <span class="mb-[18px] md:mb-[5px]"><a class="font-bold mr-[15px]" href="tel:+380935412092">+380 93 541 20 92</a>lifecell</span>
+                    <span><a class="font-bold mr-[15px]"" href="tel:+380993112979">+380 99 311 29 79</a>Vodafone</span>
+                </div>
+                <div class=" md:text-right">
+                    <p class="text-brand max-w-[312px] mb-[5px] md:mb-[25px]">Обслуживание компьютеров и монтаж сетей в Киеве</p>
+                    <p>IT-SPK © 2021</p>
+                </div>
+            </div>
+        </footer>
+        <!-- FOOTER-end -->
     </div>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
     <script src="/dist/main.js"></script>
 </body>
 </html>

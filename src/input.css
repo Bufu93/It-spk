@@ -8,4 +8,7 @@
     .btn {
         @apply px-[45px] py-[15px] bg-brand font-bold text-[14px] flex items-center uppercase
     }
+    .placeholder {
+        @apply placeholder:font-normal placeholder:text-[18px] placeholder:leading-[25px] placeholder:text-brand-dark
+    }
 }
